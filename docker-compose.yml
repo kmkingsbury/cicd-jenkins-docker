@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+   jenkins:
+    build: .
+    volumes:
+      - /var/jenkins_home
+      - /tmp
+      - /var/run/docker.sock
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    container_name: jenkins
+#   environment:
+#     - ELASTICSEARCH_URL=http://elasticsearch:9200
+    labels:
+      com.example.description: "Accounting webapp"
+      com.example.department: "Finance"
+      com.example.label-with-empty-value: ""

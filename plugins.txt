@@ -1,0 +1,10 @@
+credentials:1.28
+git:2.4.0
+git-client:1.18.0
+github:1.19.0
+icon-shim:2.0.2
+ssh-credentials:1.11
+scm-api:0.2
+plain-credentials:1.1
+github-api:1.69
+token-macro:1.11
