@@ -11,8 +11,7 @@ services:
       - "8080:8080"
       - "50000:50000"
     container_name: jenkins
-#   environment:
-#     - ELASTICSEARCH_URL=http://elasticsearch:9200
+#   example labels:
     labels:
       com.example.description: "Accounting webapp"
       com.example.department: "Finance"
