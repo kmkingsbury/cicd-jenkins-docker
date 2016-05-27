@@ -2,7 +2,7 @@ version: "2"
 
 services:
    jenkins:
-    build: .
+    build: jenkins/.
     volumes:
       - /var/jenkins_home
       - /tmp

@@ -1,4 +1,4 @@
-FROM jenkins:1.651.1
+FROM jenkins:latest
 USER jenkins
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 COPY 00_matrix.groovy /usr/share/jenkins/ref/init.groovy.d/00_matrix.groovy
