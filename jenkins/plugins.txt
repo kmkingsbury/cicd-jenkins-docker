@@ -10,3 +10,4 @@ github-api:1.69
 token-macro:1.11
 nexus-artifact-uploader:2.1.2
 parameterized-trigger:2.30
+ws-cleanup:0.29
