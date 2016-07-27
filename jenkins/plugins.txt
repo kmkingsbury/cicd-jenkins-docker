@@ -11,3 +11,8 @@ token-macro:1.11
 nexus-artifact-uploader:2.1.2
 parameterized-trigger:2.30
 ws-cleanup:0.29
+groovy:1.29
+artifactdeployer:0.33
+copyartifact:1.38.1
+build-with-parameters:1.3
+
