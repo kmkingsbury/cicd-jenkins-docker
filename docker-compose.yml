@@ -2,17 +2,19 @@ version: "2"
 
 services:
    jenkins:
+    #image: dtr/myorg/myjenkins:latest  
     build: jenkins/.
     volumes:
       - /var/jenkins_home
       - /tmp
       - /var/jenkins_home/keys
+      - /var/run/docker.sock
     ports:
       - "8080:8080"
-      - "50000:50000"
     container_name: jenkins
     environment:
-#   example labels:
+       - "JAVA_OPTS=-Dhudson.model.ParametersAction.keepUndefinedParameters=true -Dhudson.diyChunking=false"
+       - "constraint:node==hostname"
     labels:
       com.example.description: "Accounting webapp"
       com.example.department: "Finance"
