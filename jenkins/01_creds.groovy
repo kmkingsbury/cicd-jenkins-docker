@@ -34,8 +34,6 @@ usernameAndPassword2 = new UsernamePasswordCredentialsImpl(
   "admin",
   "admin123"
 )
-
 //store.addCredentials(domain, privateKey)
 store.addCredentials(domain, usernameAndPassword)
 store.addCredentials(domain, usernameAndPassword2)
-
