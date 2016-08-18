@@ -28,5 +28,12 @@ usernameAndPassword = new UsernamePasswordCredentialsImpl(
   "password"
 )
 
+usernameAndPassword2 = new UsernamePasswordCredentialsImpl(
+  CredentialsScope.GLOBAL,
+  "nexus", "Nexus Password Configuration",
+  "admin",
+  "password"
+)
 //store.addCredentials(domain, privateKey)
 store.addCredentials(domain, usernameAndPassword)
+store.addCredentials(domain, usernameAndPassword2)
