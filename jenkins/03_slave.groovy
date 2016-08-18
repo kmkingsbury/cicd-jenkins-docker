@@ -14,8 +14,9 @@ import hudson.slaves.EnvironmentVariablesNodeProperty.Entry;
                     "/home/jenkins",
                     "1",
                     Node.Mode.NORMAL,
-                    "agent-node-label",
-                    new SSHLauncher("agenNode",22,"user","password","","","","",""),
+                    "image-build",
+                    new SSHLauncher("hostname",22,"ec2-user","","/var/jenkins_home/keys/key.pem","","","",""),
+
                     new RetentionStrategy.Always(),
                     new LinkedList())
   slave.getNodeProperties().add(envPro)
